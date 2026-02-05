@@ -38,7 +38,7 @@ Java Backend Developer입니다.
 > 보안 및 계약상 제약을 고려하여 핵심 로직은 Mock 및 도메인 재설계 형태로 구성한 포트폴리오입니다.
 
 ### 📦 Repositories (Upload Complete ✅)
-- ⏳ Java Daemon (Socket 통신 – Spring Boot Base)
+- ✅ Java Daemon (Socket 통신 – Spring Boot Base)
 - ⏳ Java Daemon (HTTP / HTTPS 분기 – Pure Java Base)
 - ⏳ Java Daemon (SMTP Mail 전송 – Pure Java Base)
 - ⏳ Java Daemon (FCM Push 발송 – 서비스별 Provider 분기)
