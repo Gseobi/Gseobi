@@ -43,20 +43,24 @@ Java Backend Developer입니다.
 
 **✅ Upload Complete**
 
-- ✅ **java-socket-daemon-springboot**
-  - Spring Boot 기반 장기 실행 Socket Daemon
-  - 파일 기반 설정 로딩, 암·복호화, 재시도/타임아웃 처리
-- ✅ **ops-scheduler-batch-jobs**
-  - 서버 이중화 환경을 고려한 Scheduler 기반 배치 처리
-  - 시간 분산 실행, Lock 적용, 재시도(Backoff) 설계
 - ✅ **provider-integration-gateway**
   - 다수 PG사를 분기 처리하는 결제 요청 게이트웨이
   - Strategy Pattern 기반 구조, Mock 연동으로 설계 의도 중심 구현
+- ✅ **java-socket-daemon-springboot**
+  - Spring Boot 기반 장기 실행 Socket Daemon
+  - 파일 기반 설정 로딩, 암·복호화, 재시도/타임아웃 처리
+- ✅ **deferred-deeplink-backend**
+  - DB Function 기반 Click ID 발급과 암호화 토큰을 활용한 지연 딥링크 백엔드
+  - 위뱐조 방지 및 서버 검증 중심의 설치·최초 실행 추적 검증 구조 구현
+- ✅ **ops-scheduler-batch-jobs**
+  - 서버 이중화 환경을 고려한 Scheduler 기반 배치 처리
+  - 시간 분산 실행, Lock 적용, 재시도(Backoff) 설계
+- ✅ **spring-boot-jpa-querydsl-api**
+  - JPA / QueryDSL 기반 REST API 설계
 
+ 
 **⏳ In Progress / Planned**
 
-- ⏳spring-boot-jpa-querydsl-api
-  - JPA / QueryDSL 기반 REST API 설계
 - ⏳ **telecom-inquiry-charge-api**
   - MVNO 조회·충전 도메인 추상화 API (Mock 기반)
 - ⏳ **digital-voucher-pin-api**
