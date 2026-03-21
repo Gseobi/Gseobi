@@ -40,24 +40,24 @@
 - Java / Spring 기반 실서비스 API 설계 · 개발 · 운영 경험
 - Redis 캐싱, 메시지 처리, 외부 연동, 배치/스케줄링 구조 재구성 경험
 - 장애 대응, 재시도, 복구 가능성, 최종 정합성을 고려한 운영형 설계 지향
-- 실무 경험을 바탕으로 포트폴리오 프로젝트를 문제 해결 중심으로 재구성
+- 운영 환경 기준의 제약사항을 고려한 구조 설계와 개선에 강점
 
 <br/>
 
 ## Featured Projects
 
 ### 1. [realtime-caching-gateway](https://github.com/Gseobi/realtime-caching-gateway)
-Redis를 real-time message processing layer + cache layer로 확장하고, PostgreSQL fallback / synchronization 구조를 통해 성능, 복구 가능성, 정합성을 함께 고려한 프로젝트
+Redis를 real-time message processing layer + cache layer로 확장하고, PostgreSQL fallback / synchronization 구조를 통해 성능, 복구 가능성, 정합성을 함께 고려한 메시지 처리 프로젝트
 
 `Redis Cache` · `Fallback Recovery` · `Scheduled Sync`
 
 ### 2. [provider-integration-gateway](https://github.com/Gseobi/provider-integration-gateway)
-다수 Provider / PG 연동 시 비대해지는 분기 로직을 줄이기 위해 Provider 전략 분리와 공통 응답 표준화 구조를 설계한 프로젝트
+다수 Provider / PG 연동 시 비대해지는 분기 로직을 줄이기 위해 Provider 전략 분리와 공통 응답 표준화 구조를 설계한 결제 게이트웨이 프로젝트
 
 `Strategy Pattern` · `Response Standardization` · `Extensible Routing`
 
 ### 3. [ops-scheduler-batch-jobs](https://github.com/Gseobi/ops-scheduler-batch-jobs)
-운영형 배치에서 필요한 시간 분산 실행, 중복 실행 방지, 재시도 흐름, 운영 가시성을 구조화한 프로젝트
+운영형 배치에서 필요한 시간 분산 실행, 중복 실행 방지, 재시도 흐름, 운영 가시성을 구조화한 스케줄러 배치 프로젝트
 
 `Scheduler` · `Retry Flow` · `Operational Visibility`
 
