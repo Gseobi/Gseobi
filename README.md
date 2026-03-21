@@ -2,12 +2,15 @@
 
 # KIM JISEOP | Java Backend Developer
 
-Java / Spring 기반으로 개발하는 **Backend Developer**입니다.  
-**현재는 백엔드 전담 개발자**로 근무하며, 앱 서비스 API 서버를 중심으로  
-충전/가입자 조회, Mail, 국제 SMS, Push, Daemon, Scheduler 영역의 설계, 개발, 리팩토링, 운영, 유지보수를 수행하고 있습니다.
+실서비스 API 운영 경험을 바탕으로, Redis 캐싱 · 메시징 · 외부 연동 · 스케줄링 구조를
+설계 중심으로 재구성하는 Java Backend Developer입니다.
 
-실서비스 API의 CRUD 설계·개발·운영 경험을 기반으로,  
-운영 안정성, 정합성, 외부 연동, 상태 관리, 배치/스케줄링 구조에 강점을 가지고 있습니다.
+단순 CRUD 구현보다 정합성, 장애 복구, 재시도, 상태 관리가 중요한
+운영형 백엔드 문제를 구조적으로 풀어내는 데 강점을 가지고 있습니다.
+
+현재는 백엔드 전담 개발자로 근무하며, 앱 서비스 API 서버를 중심으로
+충전, 가입자 조회, Mail, 국제 SMS, Push, Daemon, Scheduler 영역의
+설계, 개발, 리팩토링, 운영, 유지보수를 수행하고 있습니다.
 
 <br/>
 
@@ -33,32 +36,38 @@ Java / Spring 기반으로 개발하는 **Backend Developer**입니다.
 <br/>
 
 ## Core Strengths
-- Java / Spring 기반 실서비스 API 및 운영형 Backend 설계 · 개발 · 운영
-- 외부 연동, 트랜잭션 민감 도메인, 배치/스케줄링/데몬 운영 경험
-- 장애 대응, 재시도, 복구 가능성을 고려한 구조 설계 지향
-- 실무 경험을 바탕으로 포트폴리오 프로젝트를 재구성하며 지속적으로 개선 중
+
+- Java / Spring 기반 실서비스 API 설계 · 개발 · 운영 경험
+- Redis 캐싱, 메시지 처리, 외부 연동, 배치/스케줄링 구조 재구성 경험
+- 장애 대응, 재시도, 복구 가능성, 최종 정합성을 고려한 운영형 설계 지향
+- 실무 경험을 바탕으로 포트폴리오 프로젝트를 문제 해결 중심으로 재구성
 
 <br/>
 
 ## Featured Projects
 
 ### 1. [realtime-caching-gateway](https://github.com/Gseobi/realtime-caching-gateway)
-Redis Pub/Sub + Caching + PostgreSQL 기반의 실시간 메시지 처리/동기화 구조를 재구성한 프로젝트  
-- Cache miss fallback
-- Scheduled DB merge
-- 운영 관점 문서화
+기존 DB 중심 메시지 처리 구조에서 발생할 수 있는 조회 지연, cache miss, 최종 정합성 문제를 줄이기 위해,
+Redis를 1차 처리 계층으로 두고 PostgreSQL을 fallback / sync 계층으로 분리한 구조를 설계한 프로젝트
+
+- Problem: Redis 유실 상황에서도 복구 가능한 메시지 처리 구조 필요
+- Structure: Redis cache/state layer + PostgreSQL fallback + scheduled sync
+- Verified: full miss / partial miss recovery, conversation meta recovery, dirty sync
 
 ### 2. [provider-integration-gateway](https://github.com/Gseobi/provider-integration-gateway)
-외부 Provider / PG 연동 시나리오를 기반으로 Gateway 패턴과 응답 표준화 구조를 설계한 프로젝트  
-- Provider 분기 처리
-- 응답 표준화
-- 확장 가능한 연동 구조 설계
+다수 Provider / PG 연동 시 분기 로직이 비대해지는 문제를 줄이기 위해,
+Provider 전략 분리와 공통 응답 표준화 구조를 설계한 프로젝트
+
+- Problem: Provider별 분기와 응답 처리 로직이 서비스 전반에 흩어질 수 있음
+- Structure: provider strategy + common response DTO + extensible routing
+- Verified: provider branching, unsupported provider handling, controller 변경 없는 확장
 
 ### 3. [ops-scheduler-batch-jobs](https://github.com/Gseobi/ops-scheduler-batch-jobs)
-운영성 중심의 Scheduler / Batch Job 처리 구조를 정리한 프로젝트  
-- 주기 실행
-- 중복 실행 방지 고려
-- 재시도 및 운영 가시성 반영
+운영형 배치에서 필요한 시간 분산 실행, 중복 실행 방지, 재시도 흐름, 운영 가시성을 구조화한 프로젝트
+
+- Problem: 배치 중복 실행, 실패 재처리, 운영 확인 어려움
+- Structure: grouped execution timing + lock + retry flow + ops visibility
+- Verified: grouped execution, retry flow, duplicate prevention, result visibility
 
 <br/>
 
