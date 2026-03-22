@@ -71,6 +71,7 @@ Redis를 real-time message processing layer + cache layer로 확장하고, Postg
   <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
   <img src="https://img.shields.io/badge/MyBatis-BF1E2E?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
+  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" />
 </p>
 
 ### Production Experience
@@ -80,6 +81,8 @@ Redis를 real-time message processing layer + cache layer로 확장하고, Postg
   <img src="https://img.shields.io/badge/Daemon-4B5563?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
   <img src="https://img.shields.io/badge/Tomcat-FA7A18?style=for-the-badge&logo=apachetomcat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
 ### Hands-on Experience
