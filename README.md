@@ -77,8 +77,8 @@ Redis를 실시간 처리 및 캐시 계층으로 활용하고 PostgreSQL fallba
 
 ## Links
 
-- **Resume**: [Resume](#)
-- **Portfolio**: [Portfolio](#)
+- **Resume**: [Resume](https://github.com/Gseobi/resume)
+- **Portfolio**: [Portfolio](https://github.com/Gseobi/portfolio)
 - **Blog**: [Velog](#)
 - **LinkedIn**: [LinkedIn](#)
 - **Contact**: [wsx2386@naver.com](mailto:wsx2386@naver.com)
