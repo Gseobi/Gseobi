@@ -3,12 +3,12 @@
 # KIM JISEOP | Java Backend Developer
 
 실서비스 API 운영 경험을 바탕으로,  
-외부 연동 · 캐싱 · 배치/스케줄링 · 상태 관리가 중요한 백엔드 문제를  
+외부 연동 · 상태 관리 · 배치/스케줄링 · 운영 안정성이 중요한 백엔드 문제를  
 운영 관점에서 설계하고 개선해온 Java Backend Developer입니다.
 
 단순 CRUD 구현보다  
-정합성, 예외 처리, 재시도, 장애 복구, 운영 안정성이 중요한 문제를  
-구조적으로 풀어내는 데 강점을 가지고 있습니다.
+정합성, 예외 처리, 재시도, 장애 복구처럼  
+실제 운영 환경에서 중요한 문제를 구조적으로 풀어내는 데 강점을 가지고 있습니다.
 
 현재는 백엔드 전담 개발자로 근무하며,  
 앱 서비스 API 서버를 중심으로 **충전, 가입자 조회, Mail, 국제 SMS, Push, Daemon, Scheduler** 영역의  
@@ -30,9 +30,11 @@
 ## About Me
 
 - Java / Spring 기반의 실서비스 API를 설계, 개발, 운영해왔습니다.
-- 외부 시스템 연동, 배치/스케줄링, 장기 실행 프로세스 등 운영 민감도가 높은 백엔드 영역을 주로 다뤄왔습니다.
-- Spring MVC 기반 API뿐 아니라, **Spring WebFlux + WebClient 기반 외부 연동 구성 경험**도 보유하고 있습니다.
-- 기능 구현보다 **상태 전이, 정합성, 예외 흐름, 복구 가능성**이 중요한 문제를 우선적으로 봅니다.
+- 외부 Provider / 시스템 연동, Batch / Scheduler, 장기 실행 프로세스처럼 운영 민감도가 높은 백엔드 영역을 주로 다뤄왔습니다.
+- Spring MVC 기반 API뿐 아니라, Spring WebFlux + WebClient 기반 외부 연동 구조도 실무에 적용해왔습니다.
+- 분산된 HttpURLConnection 통신 코드를 WebClientConfig와 공통 메서드 패턴으로 통합 리팩토링했으며, 외부 API 버전업 대응 유지보수도 수행하고 있습니다.
+- 기능 구현 자체보다 상태 전이, 정합성, 예외 흐름, 복구 가능성을 우선적으로 고려합니다.
+- 레거시 구조를 빠르게 파악하고 운영 리스크를 줄이는 방향으로 점진적으로 개선해온 경험이 있습니다.
 
 <br/>
 
@@ -73,6 +75,10 @@ Redis 캐시와 PostgreSQL fallback / synchronization 구조로 성능과 복구
 광고 클릭 이후 앱 설치 전/후가 분리되는 흐름에서 서버 기준 추적, 검증, 상태 연결 구조를 설계한 프로젝트  
 `Server-side Validation` · `Click Tracking` · `Consistency`
 
+### 5. [java-socket-daemon-springboot](https://github.com/Gseobi/java-socket-daemon-springboot)
+장기 실행 Socket Daemon 환경에서 timeout, retry, 처리 흐름, 운영 안정성을 고려한 구조를 설계한 프로젝트  
+`Socket Daemon` · `Timeout Control` · `Retry Flow`
+
 <br/>
 
 ## Links
@@ -86,6 +92,9 @@ Redis 캐시와 PostgreSQL fallback / synchronization 구조로 성능과 복구
 <br/>
 
 ## Tech Stack
+- **Main**: 포트폴리오와 실무에서 가장 일관되게 사용한 기술
+- **Production Experience**: 실서비스 운영에 직접 사용한 기술
+- **Working Knowledge**: 구조 이해, 설계, 학습 및 부분 적용 경험이 있는 기술
 
 ### Main
 <p>
