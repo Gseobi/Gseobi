@@ -62,21 +62,26 @@
 ## Featured Projects
 
 ### 1. [provider-integration-gateway](https://github.com/Gseobi/provider-integration-gateway)
-다수 Provider / PG 연동 환경에서 Provider 선택, 요청 구성, 응답 표준화를 Backend 게이트웨이로 모아 설계한 프로젝트
+다수 Provider / PG 연동 환경에서 Provider 선택, 요청 구성, 응답 표준화를 Backend 게이트웨이로 분리해 설계한 프로젝트
 
 `External Integration` · `Strategy Pattern` · `Response Standardization`
 
 ### 2. [ops-scheduler-batch-jobs](https://github.com/Gseobi/ops-scheduler-batch-jobs)
-운영형 배치에서 필요한 중복 실행 제어, 재시도 흐름, 운영 가시성을 구조화한 스케줄러/배치 프로젝트
+운영형 배치에서 중요한 중복 실행 제어, 재시도 흐름, 운영 가시성을 구조화한 Scheduler / Batch 프로젝트
 
 `Scheduler` · `Retry Flow` · `Execution Control`
 
 ### 3. [realtime-caching-gateway](https://github.com/Gseobi/realtime-caching-gateway)
-Redis를 실시간 처리 및 캐시 계층으로 활용하고 PostgreSQL fallback / synchronization 구조로 성능과 복구 가능성을 함께 고려한 프로젝트
+Redis를 실시간 처리 및 캐시 계층으로 활용하고, PostgreSQL fallback / synchronization 구조로 성능과 복구 가능성을 함께 고려한 프로젝트
 
 `Redis Cache` · `Fallback Recovery` · `Consistency`
 
 ### 4. [deferred-deeplink-backend](https://github.com/Gseobi/deferred-deeplink-backend)
 광고 클릭 이후 앱 설치 전/후가 분리되는 흐름에서 서버 기준 추적, 검증, 상태 연결 구조를 설계한 프로젝트
 
-`Server-side Validation` · `Click Tracking` · `Consistency`
+`Server-side Validation` · `Click Tracking` · `State Consistency`
+
+### 5. [java-socket-daemon-springboot](https://github.com/Gseobi/java-socket-daemon-springboot)
+DB 기반 작업 Polling, 암·복호화, Socket 송수신, 결과 반영 흐름을 분리해 장기 실행 Provider 연동 Daemon 구조를 설계한 프로젝트
+
+`Socket Daemon` · `Encryption Flow` · `Timeout / Retry`
