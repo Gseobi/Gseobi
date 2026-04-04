@@ -3,8 +3,8 @@
 # KIM JISEOP | Java Backend Developer
 
 실서비스 API 운영 경험을 바탕으로,  
-외부 연동 · 상태 관리 · 정합성 · 운영 안정성이 중요한 백엔드 문제를  
-운영 관점에서 설계하고 개선해온 Java Backend Developer입니다.
+외부 연동 · 상태 관리 · 정합성 · 배치/스케줄링 · 운영 안정성이 중요한  
+백엔드 문제를 운영 관점에서 설계하고 개선해온 Java Backend Developer입니다.
 
 단순 CRUD 구현보다  
 예외 처리, 재시도, 장애 복구, 상태 전이, 최종 정합성이 중요한 문제를  
@@ -74,7 +74,7 @@
 ### 3. [realtime-caching-gateway](https://github.com/Gseobi/realtime-caching-gateway)
 Redis를 실시간 처리 및 캐시 계층으로 활용하고, PostgreSQL fallback / synchronization 구조로 성능과 복구 가능성을 함께 고려한 프로젝트
 
-`Redis Cache` · `Fallback Recovery` · `Consistency`
+`Redis Cache` · `Fallback Recovery` · `State Consistency`
 
 ### 4. [deferred-deeplink-backend](https://github.com/Gseobi/deferred-deeplink-backend)
 광고 클릭 이후 앱 설치 전/후가 분리되는 흐름에서 서버 기준 추적, 검증, 상태 연결 구조를 설계한 프로젝트
